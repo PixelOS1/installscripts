@@ -1,6 +1,6 @@
 #!/bin/bash
 
-flagFile="ip_check_flag.txt"
+flagFile="/opt/pixelos/installscripts/ip_check_flag.txt"
 
 while true; do
     # Check if the flag file exists
