@@ -17,7 +17,7 @@ while true; do
 
             touch "$flagFile"
             echo "Flag file created."
-            /bin/bash /root/netdata.sh
+            /bin/bash /opt/pixelos/netdata.sh
         fi
     else
         break
