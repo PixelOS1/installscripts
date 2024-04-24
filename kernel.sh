@@ -8,5 +8,5 @@ wget https://www.pixelos.com/downloads/kernel/6.4.11/debian/debs/linux-libc-dev_
 dpkg -i *
 
 # Kernel was compiled with gcc v12
-sudo apt install --reinstall gcc-12
+sudo apt install --reinstall -y gcc-12
 sudo ln -s -f /usr/bin/gcc-12 /usr/bin/gcc
