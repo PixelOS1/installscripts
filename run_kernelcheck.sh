@@ -7,18 +7,6 @@ check_kernel_health() {
         echo "Kernel panic detected. Rebooting the system..."
         reboot
     fi
-    
-    # Check for kernel hang messages
-    if grep -q "hung_task_timeout_secs" /var/log/syslog; then
-        echo "Kernel hang detected. Rebooting the system..."
-        reboot
-    fi
-    
-    # Check for kernel crash messages
-    if grep -q "Oops" /var/log/syslog; then
-        echo "Kernel crash detected. Rebooting the system..."
-        reboot
-    fi
 }
 
 # Main function
