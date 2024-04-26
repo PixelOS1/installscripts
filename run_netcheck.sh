@@ -17,7 +17,7 @@ while true; do
 
             touch "$flagFile"
             echo "Flag file created."
-            /bin/bash /opt/pixelos/netdata.sh
+            /bin/bash /opt/pixelos/installscripts/netdata.sh
         fi
     else
         break
