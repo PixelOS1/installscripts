@@ -21,4 +21,16 @@ END
 # Restart Netdata to apply changes
 sudo systemctl restart netdata
 
+# Define the path to the Netdata configuration directory
+config_dir="/etc/netdata"
+
+# Define the path to the specific configuration file
+config_file="$config_dir/python.d.conf"
+
+# Use sed to uncomment the line containing 'nvidia_smi: yes'
+sed -i '/# nvidia_smi: yes/s/^# //' "$config_file"
+
+# Restart Netdata to apply changes
+sudo systemctl restart netdata
+
 echo "NVIDIA GPU monitoring enabled for Netdata."
